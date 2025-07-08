@@ -17,10 +17,13 @@ const config: CodegenConfig = {
   documents: "./src/**/*.graphql",
   generates: {
     "./src/graphql/generated.ts": {
-      preset: "client",
-      plugins: []
-    }
-  }
+      plugins: [
+        "typescript",
+        "typescript-operations",
+        "typescript-react-apollo"
+      ],
+    },
+  },
 };
 
 export default config;
