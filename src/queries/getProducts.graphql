@@ -1,0 +1,30 @@
+query GetProducts @shopperPreferences(locale:"fr") { 
+  shopperPreferences {
+    locale {
+      resolved 
+    }
+  }
+  site {
+    settings {
+      locales { 
+        code
+        isDefault
+      }
+    }
+    products {
+      edges {
+        node {
+          name 
+          categories {
+            edges {
+                node {
+                    name
+                    
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+}

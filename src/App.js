@@ -1,10 +1,10 @@
-import { DisplayLocations } from './DisplayLocations';
+import { DisplayProducts } from './DisplayProducts';
 
 export default function App() {
   return (
     <div>
       <h2>My first Apollo app 🚀</h2>
-      <DisplayLocations />
+      <DisplayProducts />
     </div>
   );
 }
